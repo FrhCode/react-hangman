@@ -1,0 +1,20 @@
+.hangman__answer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  &__item {
+    padding: 0 0 1rem;
+
+    border-bottom: 1px solid black;
+
+    width: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    &--empty {
+      color: rgba(255, 255, 255, 0);
+    }
+  }
+}

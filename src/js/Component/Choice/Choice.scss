@@ -1,0 +1,32 @@
+.hangman__choice {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  &__item {
+    cursor: pointer;
+    // padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2;
+    border-radius: 2px;
+    text-transform: uppercase;
+    background-color: gainsboro;
+
+    &:hover {
+      color: gainsboro;
+      background-color: black;
+    }
+    &:active {
+      color: gainsboro;
+      background-color: rgba(0, 0, 0, 0.459);
+    }
+
+    &--true {
+      background-color: teal;
+      color: white;
+    }
+  }
+}

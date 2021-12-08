@@ -1,0 +1,117 @@
+// Default width 500px
+
+.hangman {
+  padding: 2rem 1rem;
+  &__title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  width: 500px;
+  margin: 0 auto;
+  &__main {
+    display: flex;
+  }
+
+  &__qna {
+    flex: 1;
+    padding-top: 3.5rem;
+  }
+
+  &__answer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    &__item {
+      padding: 0 0 1rem;
+
+      border-bottom: 1px solid black;
+
+      width: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+
+      color: rgba(255, 255, 255, 0);
+      &--show {
+        color: rgb(0, 0, 0);
+      }
+    }
+  }
+
+  &__choice {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    &__item {
+      cursor: pointer;
+      // padding: 0.5rem;
+      width: 2rem;
+      height: 2rem;
+      text-align: center;
+      line-height: 2;
+      border-radius: 2px;
+      text-transform: uppercase;
+      background-color: gainsboro;
+
+      &:hover {
+        color: gainsboro;
+        background-color: black;
+      }
+      &:active {
+        color: gainsboro;
+        background-color: rgba(0, 0, 0, 0.459);
+      }
+
+      &:disabled {
+        opacity: 0.5;
+      }
+
+      &--true {
+        background-color: hsl(180, 100, 25.1%);
+        color: white;
+      }
+      &--false {
+        background-color: hsl(360, 100, 25.1%);
+        color: white;
+      }
+    }
+  }
+
+  &__question {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-align: center;
+
+    letter-spacing: 1rem;
+    margin-right: -1rem;
+  }
+
+  &__reset {
+    padding: 0.7rem 1rem;
+    background-color: red;
+    color: azure;
+    font-weight: 800;
+    border-radius: 3px;
+
+    margin: 1rem 0.8rem;
+
+    cursor: pointer;
+
+    &:active {
+      background-color: rgba(241, 0, 0, 0.575);
+    }
+  }
+
+  &__score {
+    margin-top: 0.5rem;
+    font-weight: 100;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
