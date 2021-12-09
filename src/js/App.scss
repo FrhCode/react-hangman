@@ -1,11 +1,13 @@
+.App {
+    position: relative;
+    // height: 1000px;
+}
 .result {
     display: none;
+
     background-color: rgba(255, 0, 0, 0.466);
     width: 100vw;
     height: 100vh;
-
-    position: absolute;
-    top: 0;
 
     z-index: 10;
 
@@ -15,6 +17,9 @@
 
     &--show {
         display: block;
+
+        position: fixed;
+        bottom: 0;
     }
 
     &--win {

@@ -23,6 +23,8 @@ class App extends React.Component {
                 gameOver: true,
             };
         });
+
+        document.querySelector("body").style.overflow = "hidden";
     }
     gameWin() {
         this.setState((state) => {
@@ -31,6 +33,7 @@ class App extends React.Component {
                 gameOver: true,
             };
         });
+        document.querySelector("body").style.overflow = "hidden";
     }
     render() {
         const { gameOver, isWin } = this.state;
